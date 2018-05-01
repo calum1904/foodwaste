@@ -1,0 +1,91 @@
+<div id="data" class="container waste-form">
+<form id="wasteForm">
+        <div class="row">
+            <div class="input-field col s4">
+            </div>
+            <div class="input-field col s4">
+                <label>Date</label>
+                <input type="text" name="Date" class="Date">
+            </div>
+            <div class="input-field col s4">
+            </div>
+        </div>
+
+        {{#times 6}}
+        <div class = "row">
+            <div class="input-field col s1.5">
+                <label>Time</label>
+                <input id="time{{@index}}" type="text" name="Hour[{{@index}}][Time]" class="Time">
+            </div>
+            <div class="input-field col s1.5">
+                <input id="customers{{@index}}" type="number" name="Hour[{{@index}}][Customers]" min="0" class="validate">
+                <label for="customers">Amount of Customers</label>
+            </div>
+            <div class="input-field col s1.5">
+                <input id="chicken{{@index}}" type="number" name="Hour[{{@index}}][Chicken]" min="0" class="validate">
+                <label for="chicken">Amount of Chicken</label>
+            </div>
+            <div class="input-field col s1.5">
+                <input id="wings{{@index}}" type="number" name="Hour[{{@index}}][Wings]" min="0" class="validate">
+                <label for="wings">Amount of Wings</label>
+            </div>
+            <div class="input-field col s1.5">
+                <input id="fillets{{@index}}" type="number" name="Hour[{{@index}}][Fillets]" min="0" class="validate">
+                <label for="fillets">Amount of Fillets</label>
+            </div>
+            <div class="input-field col s1.5">
+                <input id="dblBreast{{@index}}" type="number" name="Hour[{{@index}}][DoubleBreast]" min="0" class="validate">
+                <label for="dblBreast">Amount of Double Breast</label>
+            </div>
+            <div class="input-field col s1.5">
+                <input id="thighs{{@index}}" type="number" name="Hour[{{@index}}][Thighs]" min="0" class="validate">
+                <label for="thighs">Amount of Thighs</label>
+            </div>
+        </div>
+    {{/times}}
+
+    <div class="row">
+            <div class="input-field col s4">
+            </div>
+            <div class="input-field col s4 center">
+                <h5>Waste</h3>
+            </div>
+            <div class="input-field col s4">
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class="input-field col s3">
+                <input id="chicken" type="number" name="Waste[ChickenWaste]" min="0" class="validate">
+                <label for="chicken">Amount of Chicken</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="wings" type="number" name="Waste[WingsWaste]" min="0" class="validate">
+                <label for="wings">Amount of Wings</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="fillets" type="number" name="Waste[FilletsWaste]" min="0" class="validate">
+                <label for="fillets">Amount of Fillets</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="dblBreast" type="number" name="Waste[DoubleBreastWaste]" min="0" class="validate">
+                <label for="dblBreast">Amount of Double Breast</label>
+            </div>
+            <div class="input-field col s3">
+                <input id="thighs" type="number" name="Waste[ThighsWaste]" min="0" class="validate">
+                <label for="thighs">Amount of Thighs</label>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col s4">
+
+            </div>
+            <div class="center col s4">
+                <button class="waves-effect waves-light btn">Submit</button>
+            </div>
+    </form>
+    </div>
+    </div>

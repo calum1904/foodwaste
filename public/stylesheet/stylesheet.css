@@ -1,0 +1,20 @@
+.top-banner {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    background: #1976d2;
+    color: white;
+}
+
+.waste-form {
+    padding-top: 1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+#results{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
